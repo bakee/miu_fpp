@@ -13,8 +13,7 @@ public class IsFibonacci extends BaseTest implements FppTest {
 	
 	private void printResult(int n, int expectedResult) {
 		int actualResult = isFibonacci(n);
-		boolean isPassed = actualResult == expectedResult;
-		printResult(isPassed, expectedResult, actualResult, n);
+		printResult(expectedResult, actualResult, n);
 	}
 	
 	private int isFibonacci(int n) {
