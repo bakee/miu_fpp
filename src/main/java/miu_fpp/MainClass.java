@@ -12,9 +12,9 @@ public class MainClass {
 				new IsHollow(),
 				new HasNValues()
 		};
-
-		for (FppTest fppTest : tests) {
-			fppTest.test();
-		}
-	}
+		
+        for (FppTest fppTest : tests) {
+            fppTest.test();
+        }
+    }
 }
