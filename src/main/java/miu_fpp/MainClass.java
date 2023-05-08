@@ -7,7 +7,10 @@ public class MainClass {
 				new IsFibonacci(),
 				new IsTwin(),
 				new IsComplete(),
-				new IsDual()
+				new IsDual(),
+				new IsBunker(),
+				new IsHollow(),
+				new HasNValues()
 		};
 
 		for (FppTest fppTest : tests) {
