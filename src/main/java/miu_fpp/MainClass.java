@@ -10,7 +10,8 @@ public class MainClass {
                 new IsDual(),
                 new IsBunker(),
                 new IsHollow(),
-                new HasNValues()
+                new HasNValues(),
+                new DecodeNumber()
             };
 
         for (FppTest fppTest : tests) {
