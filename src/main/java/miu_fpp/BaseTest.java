@@ -20,6 +20,23 @@ public abstract class BaseTest {
         printTestName();
         printMessage(Arrays.toString(arr), expectedResult, actualResult);
     }
+    
+    protected void printResult(int[] actualResult, int[] expectedResult, int[] arr, int[] arr2) {
+        printTestName();
+        String input = Arrays.toString(arr) + ", " + Arrays.toString(arr2);
+        printMessage(input, expectedResult, actualResult);
+    }
+    
+    private void printMessage(String input, int[] expectedResult, int[] actualResult) {
+        
+        boolean isPassed = expectedResult == null ? actualResult == null : Arrays.equals(expectedResult, actualResult);
+        if (isPassed) {
+            System.out.println("PASSED for input:" + input);
+        } else {
+            System.out.println("FAILED for input: " + input + ", expected: " + Arrays.toString(expectedResult) + ", but was: "
+                    + Arrays.toString(actualResult) + " !!!!!!!!!!!!!!!!!!!!!!!!!!!");
+        }
+    }
 
     private void printMessage(String input, int expectedResult, int actualResult) {
         boolean isPassed = actualResult == expectedResult;

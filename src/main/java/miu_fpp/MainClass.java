@@ -11,7 +11,8 @@ public class MainClass {
                 new IsBunker(),
                 new IsHollow(),
                 new HasNValues(),
-                new DecodeNumber()
+                new DecodeNumber(),
+                new FilterArray()
             };
 
         for (FppTest fppTest : tests) {
